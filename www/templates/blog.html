@@ -1,0 +1,26 @@
+<ion-view view-title="Blog">
+  <ion-nav-buttons side="secondary">
+        <div class="buttons">
+          <button class="button button-icon icon ion-ios-plus-outline"
+            ng-click="openPopover($event)"></button>
+        </div>
+      </ion-nav-buttons>
+   <div class="tabs-striped tabs-color-royal">
+    <ul class="tabs">
+       <!--  <li ng-class="{active:isSelected(1)}" class="tab-item">
+            <a ng-click='setSelection(1)'>Blogs Overview</a></li> -->
+    
+       <!--  <li ng-class="{active:isSelected(2)}" class="tab-item">
+            <a ng-click="setSelection(2)">Post a Blog</a></li> -->
+
+         <li ng-class="{active:isSelected(3)}" class="tab-item">
+            <a href="#/app/posteditor">Blogs Overview Beta</a></li>
+    </ul>
+  </div>
+	<ion-content scroll="true"  overflow-scroll="true" class="has-header padding">
+	
+		<iframe id='BlogContent' src="{{iframeSrc}}" width="100%" height="100%" class="iframe-issue"></iframe>
+  <!-- <iframe id='BlogContent' src="http://getbootstrap.com/" width="100%" height="100%" class="iframe-issue"></iframe>  -->
+	</ion-content>
+  <
+</ion-view>

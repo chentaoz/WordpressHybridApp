@@ -1,0 +1,46 @@
+<ion-view >
+    <ion-content>
+       
+ 
+<div class="container" ng-repeat="post in allPosts">
+    <div class="row " >
+        <div class="col"></div>
+        <div class="col col-80">
+   
+            <h4 >{{post.post_title}}</h4>
+        
+            <article  class='wp-article' ng-bind-html="post.post_content">
+                  <!-- |{{renderHTML(post.post_content)}} -->
+
+            </article>
+
+
+        </div>
+        <div class="col"></div>
+
+    </div>
+    <div class="row" style="margin-top: 10px; margin-bottom:15px ">
+    <div class="col col-5"></div>
+    <div class="col col-90" style="background-color: #f7f7f7; padding:15px 20px">
+
+ 
+       <sapn class="label-font"><i class="ion-image"></i>&nbsp;Image</sapn>
+
+  
+       <sapn class="label-font"><i class="ion-ios-calendar-outline" ></i>&nbsp;{{post.post_date}}</sapn>
+ 
+       <sapn class="label-font"><i class="ion-android-textsms " ></i>&nbsp;{{post.comment_count}} Comment</sapn>
+
+  
+    </div>
+    <div class="col col-5"></div>
+
+    </div>
+
+</div>
+
+
+        
+
+     </ion-content>
+</ion-view>

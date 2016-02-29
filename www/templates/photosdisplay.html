@@ -1,0 +1,34 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Add Comment</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closePhotos()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+      <div class="item item-divider">
+      <i class="ion-images"></i>
+      My Uploaded Photos
+    </div>
+    <a class="item item-list-detail">
+      <ion-scroll direction="x">
+        <img ng-repeat="image in allImages" ng-src="{{image}}" ng-click="showImages($index)" class="image-list-thumb" style="width:75px;height:75px"/>
+      </ion-scroll>
+    </a>
+
+    <br><br>
+    <div class="container">
+     <!--  <div style="width:200px;height:200px"> -->
+     
+     <center><img src="{{src}}"  style="margin:auto;width:200px;height:200px"/></center>
+     </div>
+   <!--    </div> -->
+    </div>
+    <br/>
+    <div class="button-bar">
+    <button class="button button-outline button-positive" ng-click="playVideo()">Play a video</button>
+  </div>
+    </form>
+
+  </ion-content>
+</ion-modal-view>
